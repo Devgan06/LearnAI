@@ -1,0 +1,26 @@
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.pyc
+venv/
+.venv/
+
+# ChromaDB
+chroma_db/
+
+# Node.js
+node_modules/
+dist/
+
+# Uploaded documents
+uploads/
+
+# macOS
+.DS_Store
+
+# Local frontend backups
+frontend/src/App.backup.*
