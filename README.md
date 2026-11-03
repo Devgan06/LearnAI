@@ -16,8 +16,7 @@ The project uses Retrieval-Augmented Generation (RAG) to provide context-aware a
 ![AI Tutor](screenshots/ai-tutor.png)
 
 ### 4. AI-Generated Practice Quiz
-![Practice Quiz](screenshots/quiz.
-png)
+![Practice Quiz](screenshots/quiz.png)
 
 ### 5. Quiz Results and Evaluation
 
