@@ -162,3 +162,33 @@ Open the local URL displayed by Vite in your terminal.
 ## Project Purpose
 
 LearnAI was developed to explore the practical application of Large Language Models, Retrieval-Augmented Generation, semantic search, and full-stack development in AI-assisted learning environments.
+
+
+## System Architecture
+
+```mermaid
+flowchart TD
+    A["Student"] --> B["React Frontend"]
+    B --> C["FastAPI Backend"]
+
+    C --> D["PDF Processing"]
+    D --> E["Text Extraction"]
+    E --> F["Text Chunking"]
+    F --> G["FastEmbed"]
+    G --> H[("ChromaDB Vector Store")]
+
+    B --> I["Student Question"]
+    I --> C
+    C --> J["Question Embedding"]
+    J --> K["Semantic Search"]
+    H --> K
+    K --> L["Relevant Document Chunks"]
+    L --> M["OpenAI GPT-4o-mini"]
+    M --> N["Context-Aware Answer"]
+    N --> B
+
+    C --> O["Quiz Generation"]
+    O --> M
+    M --> P["MCQs and Explanations"]
+    P --> B
+```
