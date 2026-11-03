@@ -192,3 +192,29 @@ flowchart TD
     M --> P["MCQs and Explanations"]
     P --> B
 ```
+
+## API Reference
+
+LearnAI uses a REST API developed with FastAPI to connect the React frontend with the AI-powered backend.
+
+### Available Endpoints
+
+| Method | Endpoint | Description |
+|---|---|---|
+| GET | `/` | Backend welcome endpoint |
+| GET | `/health` | Check backend health |
+| GET | `/documents` | Retrieve uploaded documents |
+| POST | `/upload-pdf` | Upload and process PDF documents |
+| DELETE | `/documents/{document_id}` | Delete a selected document |
+| POST | `/ask` | Generate document-grounded answers |
+| POST | `/generate-quiz` | Generate multiple-choice questions |
+
+### Interactive API Documentation
+
+FastAPI provides interactive API documentation through Swagger UI.
+
+When the backend is running, visit:
+
+`http://localhost:8000/docs`
+
+Use Swagger UI to explore endpoints, submit requests, and inspect API responses.
